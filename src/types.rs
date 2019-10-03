@@ -34,7 +34,8 @@ pub struct Channel {
     pub is_read_only: Option<bool>,
     pub is_shared: Option<bool>,
     pub last_read: Option<String>,
-    pub latest: Option<::Message>,
+    // Schema currently broken for Message - hiding it
+    //pub latest: Option<::Message>,
     pub members: Option<Vec<String>>,
     pub name: Option<String>,
     pub name_normalized: Option<String>,
